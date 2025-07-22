@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.jpg">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <hr>
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        <label for="username" >username:
+        </label>
+        <input autofocus minlength="5" maxlength="15"type="text" id="username" placeholder="spongeBob" required>
+        <br>
+        <label for="password">password:</label>
+        <input type="password" id="password" required >
+        <br>
+        <br>
+        <label for="email">email:</label>
+        <input type="email" id="email" placeholder="something@gmail.com"><br>
+        <label for="phone">Phone #:</label>
+        <input type="tel"id="phone" placeholder="987-654-3210">
+        <br>
+        <label for="bday">birthdate :</label>
+        <input type="date" id="bday">
+        <br>
+        <label for="quantity">quantity :</label>
+        <input type="number" min="0" max="" id="quantity" value="1">
+        <br>
+
+        <label for="title">title :</label>
+        <label for="Mr." >Mr.</label>
+        <input type="radio" id="Mr." name="title"value="Mr.">
+        <label for="Ms." >Ms.</label>
+        <input type="radio" id="Ms." name="title"value="Ms.">
+        <label for="Dr." >Dr.</label>
+        <input type="radio" id="Dr." name="title"value="Dr.">
+        <br>
+        <label for="payment :">payment :</label>
+        <select name="visa" id="payment">visa</select>
+        <select name="visa" id="payment">visa</select>
+        <select name="mastercard" id="payment">mastercard</select>
+        <select name="giftcard" id="payment">giftcard</select>
+        <br>
+        <label for="sub">subscribe</label>
+        <input type="checkbox" id="sub">
+        <br>
+        <label for="comment">comment :</label>
+        <textarea rows="3" cols="30" id="comment"></textarea>
+        <label for="file" >Choose File</label>
+        <input type="file" id="file" accept="imae/png/, image/jpeg">
+        <br>
+        <input type="reset" >
+        <input type="submit">
+    </form>
+</body>
+</html>

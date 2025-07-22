@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.jpg">
+    <title>Button</title>
+</head>
+<body>
+    <!--<a href="av.html"><button style="font-size: 25px;background-color: grey;color:lightblue;border-radius:30px;">click me</button></a>-->
+    <button onclick="doSomething()"style="font-size: 25px;background-color: grey;color:lightblue;border-radius:30px;">click me</button>
+    <p id="greet">Hello</p>
+    <script>
+        function doSomething(){
+            document.getElementById('greet').innerHTML="Goodbye"
+        }
+    </script>
+</body>
+</html>
